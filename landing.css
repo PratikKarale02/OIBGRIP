@@ -1,0 +1,165 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family:sans-serif ;
+}
+.banner{
+    width:100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(landing.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    height: 10px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(223, 253, 248);
+    text-transform: uppercase;
+
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background:aqua;
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    transition: 0.5s;
+}
+.navbar ul li:hover:after{
+width: 100%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 22%;
+    text-align: center;
+    color: rgb(247, 253, 253);
+}
+.content h1{
+    font-family: serif;
+    font-size: 60px;
+    margin-top: 80px;
+}
+.content p{
+    color: rgb(176, 237, 245);
+    margin: 5px auto;
+    font-weight: 100;
+    line-height: 17px;
+    font-size: 13px;
+    font-style: italic;
+}
+h1 span{
+    font-size:120px ;
+    color: rgb(148, 141, 141);
+    font-family: serif;
+    text-decoration:wavy;
+    font-style:oblique;
+}
+button{
+    width: 200px;
+    padding: 15px;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border:2px solid rgb(27, 227, 253);
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+button span{
+    background: rgb(101, 234, 252);
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover  span{
+    width: 100%;
+}
+button:hover span{
+    border:none;
+
+}
+
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:rgb(71, 69, 69);
+    color: white;
+    height: 40px;
+    text-align: center;
+    margin: 5px;
+
+  }
+  .footer ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    height: 10px;
+    margin: 3px;
+    
+}
+.footer ul li a{
+    text-decoration: none;
+    color: rgb(223, 253, 248);
+    text-transform: uppercase;
+    font-size: 13px;
+    color: rgb(13, 14, 14);
+    font-weight: bold;
+}
+.fa {
+    padding: 12px;
+    font-size: 30px;
+    width: 13px;
+    text-align: center;
+    text-decoration: none;
+    
+}
+  
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+  
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+footer ul span {
+    color: rgb(153, 161, 159);
+}
